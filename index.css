@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+}
+
+@font-face {
+    font-family: "October Twilight";
+    src: url("October Twilight.ttf");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("Segoe UI.ttf");
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background: url("back.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    background: linear-gradient(to right, #103547 10%, #1372a1 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-size:50px; 
+    font-family:Comic Sans MS;
+	font-style:bold;
+    line-height: 2em;
+}
+
+.button1 {
+    background-color: #A9A9A9;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 40px;
+    border-radius: 100px;
+    outline: none;
+}
+
+.button2 {
+    background-color: #A9A9A9;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 100px;
+    outline: none;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+
+}
+
+.dropdown button {
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown div {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    min-width: 100%;
+    opacity: 0;
+}
+
+.dropdown div a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: #000;
+    white-space: nowrap;
+}
+
+.dropdown div a:hover {
+    background-color: #066796;
+    color: #fff;
+}
+
+.buttons {
+    margin-top: 35px;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 55px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    border: 6px solid #1372a1;
+
+}
+
+td::after {
+    content: "";
+    display: block;
+}
+
+td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+
+td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+
+
+
+.play-area {
+    text-align: center;
+}
+
+.switch {
+    display: inline-grid;
+    float: right;
+    position: absolute;
+    margin-top: 156px;
+    margin-left: 90px;
+}
+
+.button-x {
+    background-color: #1372a1;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-o {
+    background-color: #A9A9A9;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.restart {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.button3 {
+    width: 120px;
+    background-color: #1372a1;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 100px;
+    outline: none;
+}
+footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #3f51b5;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
